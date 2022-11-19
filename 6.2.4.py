@@ -1,0 +1,12 @@
+def extend_list_x(list_x, list_y):
+	"""
+	This fucntion recives 2 lists. The fucnction adds list 1 to the beginig of list 2.
+	:param list_x: list 1
+	:param list_y: list 2
+	:type list_x: list
+	:type list_y: list
+	:return: list_x in the beginig of list_y.
+	:rtype: list
+	"""
+	list_x[:0] = list_y
+	return list_x

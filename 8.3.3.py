@@ -1,0 +1,18 @@
+def count_chars(my_str):
+    """
+    Counts the frequency of each char in the input list and builds a 
+    dictionary, contains the char and its freq.
+    :paran: my_str: the input list of characters
+    :type: list
+    :return: a dictionay, in the forman [chat, freq]
+    :rtype: dictionay 
+    """
+    my_dict = {}
+    my_list = []
+    new_str = my_str.replace(" ", "")
+    for letter in new_str:
+        if letter in my_list:
+            continue
+        my_dict[letter] = new_str.count(letter)
+        my_list.append(letter)
+    return my_dict

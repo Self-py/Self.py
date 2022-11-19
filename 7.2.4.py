@@ -1,0 +1,15 @@
+def seven_boom(end_number):
+	"""
+	This fucnction recives a integer and returns a list with numbers in the range from 0 to the number. If a number is multiple of the number or includes "7" in a number, the number will turn into BOOM.
+	:param end_number: a integer
+	:type end_number: int
+	:return: a list
+	:rtype: list
+	"""
+	new_list = []
+	for num in range(end_number + 1):
+		if (num % 7 == 0) or ("7" in str(num)):
+			new_list.append('BOOM')
+		else:
+			new_list.append(num)
+	return new_list

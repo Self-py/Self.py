@@ -1,0 +1,18 @@
+def are_files_equal(file1, file2):
+    """
+    Compares 2 files.
+    :param: file1, file2: path of compared files
+    :type: string
+    :return: True if files equal, False if not
+    :rtype: boolean
+    """
+    first_open = open(file1, "r")
+    file1_read = first_open.read()
+    first_open.close()
+    second_open = open(file2, "r")
+    file2_read = second_open.read()
+    second_open.close()
+    if file1_read == file2_read:
+        return True
+    else:
+        return False

@@ -1,0 +1,17 @@
+def func(num1, num2):
+	"""
+	This function calculates the sum of the two parameters, and returns the result of the calculation.
+	:param num1: the first number
+	:param num2: the second number
+	:type func: int
+	:return: the sum of the two parameters
+	:rtype func: int
+	"""
+	help(func)
+
+def main():
+	# Call the function func
+    func(5, 2)
+
+if __name__ == "__main__":
+    main()

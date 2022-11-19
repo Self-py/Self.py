@@ -1,0 +1,17 @@
+def try_update_letter_guessed(letter_guessed, old_letters_guessed):
+	"""
+	this function receives a input and checks if the input is proper. If the input has more than one Character, or the input has a sign that is not an English letter, than the function will rerutn "False", also if the letter is already gessed. But if the input has only one English letter, the function will rerutn "True".
+	:param letter_guessed: the input
+	:param old_letters_guessed: letters that have been already gessed
+	:return: "True" or "False"
+	:rtype: str
+	"""
+	sorted_olg = old_letters_guessed.sort()
+	arrows_olg = ' -> '.join(old_letters_guessed)
+	if (len(letter_guessed) > 1) or (not letter_guessed.isalpha()) or (((letter_guessed.lower()) or (letter_guessed.upper())) in old_letters_guessed):
+		print("X")
+		print(arrows_olg)
+		return False
+	if (len(letter_guessed) == 1) and (letter_guessed.isalpha()) and (((letter_guessed.lower()) or (letter_guessed.upper()))  not in old_letters_guessed):
+		old_letters_guessed.append(letter_guessed)
+		return True

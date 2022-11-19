@@ -1,0 +1,3 @@
+letter = input("Guess a letter: ")
+english_letter = (letter)
+print(letter)

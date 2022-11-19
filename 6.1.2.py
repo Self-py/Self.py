@@ -1,0 +1,10 @@
+def shift_left(my_list):
+	"""
+	This fucnction receives a list of length 3, nad makes a new one by moving every item that in the list one step to the left.
+	:param my_list: a list of length 3
+	:type my_list: list
+	:return: a new list wich every item that in the  fist list moves one step to the left.
+	:rtype: list
+	"""
+	new_list = [my_list[1], my_list[2], my_list[0]]
+	return new_list

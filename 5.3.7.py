@@ -1,0 +1,5 @@
+def chocolate_maker(small, big, x):
+	if small + big * 5 >= x and x % 5 <= small:
+		return True
+	else:
+		return False

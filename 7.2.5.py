@@ -1,0 +1,15 @@
+def sequence_del(my_str):
+	"""
+	This fucnction resices a string and removes every character that is in a row.
+	:param my_str: a string
+	:type my_str: str
+	:return: a new string
+	:rtype: str
+	"""
+	prev_letter = ""
+	new_str = []
+	for letter in my_str:
+	    if letter != prev_letter:
+	        new_str.append(letter)
+	    prev_letter = letter
+	return ''.join(new_str)

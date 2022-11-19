@@ -1,0 +1,6 @@
+number = int(input("Enter three digits (each digit for one pig):"))
+sum_of_digits = (number) // 100 + ((number) % 100) // 10 + (number) % 10
+print(sum_of_digits)
+print(int(sum_of_digits / 3))
+print(sum_of_digits - int(sum_of_digits / 3) * 3)
+print(sum_of_digits - int(sum_of_digits / 3) * 3 == 0)

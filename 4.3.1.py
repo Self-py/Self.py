@@ -1,0 +1,9 @@
+letter = input("Guess a letter: ")
+if len(letter) > 1:
+	print("E1")
+if not letter.isalpha():
+	print("E2")
+if (len(letter) > 1 and not letter.isalpha()):
+	print("E3")
+else:
+	print(letter.lower())

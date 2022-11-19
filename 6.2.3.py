@@ -1,0 +1,10 @@
+def format_list(my_list):
+	"""
+	This fucnction receives a list with even numbers length of strings, and makes a string from the odd numbers strings from the list and adds "and" with the last string from the list.
+	:param my_list: the list
+	:type my_list: list
+	:return: a string
+	:rtype: str
+	"""
+	new_list = ', '.join(my_list[::2])
+	return new_list + ", and " + my_list[-1]

@@ -1,0 +1,15 @@
+def is_greater(my_list, n):
+	"""
+	This fucnction recives two parameters: a list of numbers, and a number. The fucnction returns a new list with all of the numbers from the first list that are bigger than the number (n).
+	:param my_list: a list of numbers
+	:param n: a number
+	:type my_list: list
+	:type n: int
+	:return: a new list
+	:rtype: list
+	"""
+	list = []
+	for number in my_list:
+		if number > n:
+			list.append(number)
+	return list

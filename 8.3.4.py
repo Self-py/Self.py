@@ -1,0 +1,17 @@
+def inverse_dict(my_dict):
+    """
+	cross-changes values and keys in a dictionary: each value becomes a key and each key becomes a value.
+	:paran: my_dict: the input dictionary
+    :type: tuple
+    :return: the cross-changed dictionay
+    :rtype: tuple
+    """
+    new_dict = {}
+    for key in my_dict:
+        if my_dict[key] in new_dict:
+            new_dict[my_dict[key]].append(key)
+        else:
+            new_dict[my_dict[key]] = [key]
+    for key in new_dict:
+        new_dict[key].sort()
+    return new_dict

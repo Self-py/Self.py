@@ -1,0 +1,20 @@
+def choose_word(file_path, index):
+    with open(file_path, "r") as read_file:
+        readed = read_file.read()
+
+    splited = readed.split()
+    prev_item = ""
+    my_list = []
+    for item in splited:
+	    if item != prev_item:
+	        my_list.append(item)
+	    prev_item = item
+    index0 = len(my_list)
+
+    if index > len(splited):
+        new_splited = splited * index
+        index1 = new_splited[index - 1]
+    else:
+        index1 = splited[index - 1]
+    my_tuple = (index0, index1)
+    return my_tuple

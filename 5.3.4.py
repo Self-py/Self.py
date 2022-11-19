@@ -1,0 +1,5 @@
+def last_early(my_str):
+	if my_str.lower()[-1] in my_str.lower()[:-1]:
+		return True
+	else:
+		return False
